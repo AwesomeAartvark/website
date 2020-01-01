@@ -9,6 +9,66 @@
 /*Berkshire Swash*/
 @import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
 
+/*
+-----------------Notes-----------------------
+Comment out section: crt + /
+margin: Top Right Bottom Left;
+---------------------------------------------
+*/
+
+/* Clears default padding and margins */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../images/galaxy-background-rough.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-attachment: scroll;
+
+  color: white;
+
+  /* min-height: 100vh; */
+  position: relative;
+    min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+
+.mainContainer {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.button{
+  padding: 1rem 2rem;
+  margin: 1rem 2rem 1rem 2rem;
+  width: 8rem;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  text-align: center;
+  display: inline-block;
+  background-color: rgb(222, 11, 220);
+
+}
+
 .artworks {
   display: flex;
   flex-wrap: wrap;
@@ -19,4 +79,31 @@
   max-height: 20rem;
   margin: 0 0.5rem;
   /* flex-grow: 2; */
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 5rem;
+  background-color: rgb(222, 11, 220);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .logo {
+  width: 6rem;
+}
+
+.footInfo {
+  margin: 1rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#footRight {
+  align-items: flex-end;
 }
