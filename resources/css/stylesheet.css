@@ -61,6 +61,43 @@ a:visited {
 }
 
 
+
+details {
+    transition: height 1s ease;
+    transition: 2s;
+    overflow: hidden;
+}
+
+details:not([open]) {
+    transition: 1s;
+    height: 2rem;
+}
+
+details:not([open]) p {
+   -webkit-transition: opacity 3s ease-in-out;
+}
+
+details[open]
+{
+    transition: 1s;
+    height: 4.5rem;
+
+}
+
+.commissions:hover:not([open]) {
+    transform: scale(1.1);
+}
+
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:focus {
+  outline-style: none;
+}
+
+
 .mainContainer {
   min-height: 100%;
   padding-bottom: 5rem;
@@ -68,11 +105,13 @@ a:visited {
 }
 
 .body {
-  /* position: relative; */
+    /* position: relative; */
 }
 
 .content {
-  /* position: relative; */
+  font-size: 1.5rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 /* Menu Buttons */
@@ -150,7 +189,7 @@ a.button:hover {
 }
 
 #me {
-  margin-top: -7rem;
+  margin-top: -8rem;
 }
 
 .ProfilePic {
@@ -182,6 +221,53 @@ a.button:hover {
 
 }
 
+#icons {
+  display: inline-block;
+}
+
+.commissions {
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 2rem;
+}
+
+
+
+.commissions summary i {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.8rem;
+  font-size: 170%;
+  /* padding-right: 5rem; */
+}
+
+/* .commissions summary p {
+  font-size: 1.2rem;
+} */
+
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1rem 0rem;
+}
+
+.icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 170%;
+  width: 4rem;
+  height: 4rem;
+  padding: 0;
+  padding: 0.2rem;
+  margin: 0;
+  margin-right: 1rem;
+  background-color: rgb(222, 11, 220);
+  border-radius: 50%;
+}
 
 footer {
   position: absolute;
