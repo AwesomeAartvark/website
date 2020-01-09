@@ -28,7 +28,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   /* background-position: center; */
-  background-attachment: scroll;
+  /* background-attachment: scroll; */
+
+  /* overflow-x: hidden; */
+  /* perspective: 2px; */
 
   color: white;
 
@@ -39,6 +42,23 @@ body {
   /* width: 100%; */
 
   font-family: sans-serif;
+}
+
+.stars img {
+  width: 100%;
+  height: 100%;
+}
+
+.stars {
+  background-image: url(../images/stars-test.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 120%;
+  display: block;
+  float: left;
+  position: absolute;
+  z-index: -3;
 }
 
   /* Stlying entire scroll bar w/ track */
@@ -137,17 +157,29 @@ summary:focus {
   outline-style: none;
 }
 
+/* #main {
+  background-image: url(../../resources/images/stars-test.png);
+
+}  */
 
 .mainContainer {
   min-height: 100%;
   padding-bottom: 5rem;
   text-align: center;
 
+  /* position: relative; */
+  /* background-image: url(../../resources/images/stars-test.png); */
+  /* background-size: cover; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+/*
+.bg1::after {
+  background-image: url(../../resources/images/stars-test.png);
+} */
 
 .content {
   font-size: 1.5rem;
@@ -251,12 +283,21 @@ a.button:hover {
   /* margin-right: 0px; */
     /* box-sizing: border-box; */
 
+
 }
 
 .artworks img {
 
   display: block;
   float: left;
+}
+
+.art {
+      transition: 0.5s
+}
+
+.art:hover {
+  transform: scale(1.1);
 }
 
 /* .art {

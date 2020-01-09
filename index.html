@@ -9,7 +9,6 @@
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
     <!-- When you redo the dynamic navigation, readd javascript below and correct ref link -->
     <!-- <script type="text/javascript" src="js/webjava.js"></script> -->
 
@@ -20,9 +19,12 @@
     <title>Home | AwesomeAartvark</title>
   </head>
 
-  <body>
+  <body id="body">
     <!--NOTE: Might be better to have pictures for fonts/menu headings?
     Do not show up when not connected to internet/could take longer to load?-->
+    <div class="stars rellax" data-rellax-speed="10">
+      <!-- <img class = "rellax" src="resources/images/stars-test" alt=""> -->
+    </div>
 
     <div class="mainContainer">
 
@@ -68,6 +70,13 @@
       </div>
 
     </footer>
+
+    <!-- <script type="text/javascript" src="resources/js/starScroll.js"></script> -->
+
+    <script src="resources/js/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax('.rellax');
+    </script>
 
   </body>
 
